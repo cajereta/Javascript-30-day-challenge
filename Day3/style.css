@@ -1,0 +1,79 @@
+:root{
+   --base: #B4D455;
+   --blur: 0px;
+   --contrast: 100%;
+   --sepia: 0%;
+   --grayscale: 0%;
+   --hue:0deg;
+   --saturate: 100%;
+   --invert:0%;
+   --brightness: 100%;
+}
+img{
+   border: var(--base) solid 2px;
+   border-radius: 2%;
+      background: var(--base);
+      filter: blur(var(--blur)) contrast(var(--contrast)) sepia(var(--sepia)) grayscale(var(--grayscale)) hue-rotate(var(--hue)) saturate(var(--saturate)) invert(var(--invert)) brightness(var(--brightness));
+
+}
+body {
+   text-align: center;
+   background: #193549;
+   color: white;
+   font-family: 'helvetica neue', sans-serif;
+   font-weight: 100;
+   font-size: 1.75em;
+}
+.hl{
+   color: var(--base);
+}
+.controls {
+   margin-bottom: 30px;
+}
+p{
+   margin: 0.5em;
+}
+h2{
+   margin: 0.5em;
+}
+
+
+input {
+   width: 100px;
+}
+
+.col{
+   float: left;
+   width: 33%;
+}
+#selector{
+   text-decoration: underline;
+   text-decoration-color: var(--base);
+}
+
+@media (max-width:670px){
+   .col{
+      width: 50%;
+   }
+   body{
+      font-size: 1em;
+   }
+   img{
+      width: 90%;
+   }
+   p{
+      margin: 0.5em;
+   }
+   input{
+      width: 70px;
+   
+   }
+}
+footer{
+   font-size: 0.45em;
+   text-decoration: underline;
+   position: fixed;
+   bottom: 0;
+   text-align: center;
+   width: 100%;
+}
